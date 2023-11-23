@@ -263,17 +263,79 @@ body {
   color: #fff;
   background-color: #000;
 }
-.footer__link {
-}
 .footer__text {
   padding: 20px 0;
 }
 .footer__list {
   padding-top: 80px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 0 20px;
+  gap: 20px;
 }
-.footer__item {
+
+@media (max-width: 1200px) {
+  .choose-color__list {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .choose-color {
+    padding-bottom: 60px;
+  }
+  .choose-color__list {
+    gap: 16px;
+  }
+  .main__title {
+    font-size: 36px;
+  }
+  .composition {
+    margin-bottom: 60px;
+  }
+  .case {
+    padding: 60px 0;
+  }
+  .energy__title {
+    margin-bottom: 20px;
+    padding-top: 60px;
+  }
+  .energy__num {
+    margin-bottom: 20px;
+    font-size: 110px;
+  }
+}
+
+@media (max-width: 560px) {
+  .choose-color {
+    padding-bottom: 40px;
+  }
+  .choose-color__text {
+    margin-bottom: 40px;
+  }
+  .composition__inner {
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+  }
+  .composition__inner-text p {
+    width: 100%;
+  }
+  .case {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 414px) {
+  .main__title,
+  .choose-color__title {
+    font-size: 28px;
+  }
+  .energy__num {
+    font-size: 92px;
+  }
+  .case img {
+    width: 100%;
+  }
 }
