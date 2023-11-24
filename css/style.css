@@ -275,7 +275,16 @@ body {
   gap: 20px;
 }
 
-@media (max-width: 1200px) {
+/** MEDIA QUERIES  **/
+
+@media (max-width: 1469px) {
+  .title {
+    font-size: 180px;
+    transform: translateX(130px);
+  }
+  .header__content-img img {
+    max-width: 100%;
+  }
   .choose-color__list {
     flex-wrap: wrap;
   }
