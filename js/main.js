@@ -1,4 +1,4 @@
-const chooseColor = document.querySelectorAll(".choose-color__btn");
+const chooseColor = document.querySelectorAll(".choose__color-btn");
 const contentItem = document.querySelectorAll(".content-item");
 
 chooseColor.forEach(function (element) {
@@ -11,16 +11,16 @@ function open(evt) {
   const contentActive = document.querySelectorAll(`.${button}`);
 
   chooseColor.forEach(function (item) {
-    item.classList.remove("choose-color__btn--active");
+    item.classList.remove("choose__color-btn--active");
   });
 
-  target.classList.add("choose-color__btn--active");
+  target.classList.add("choose__color-btn--active");
 
   contentItem.forEach(function (item) {
-    item.classList.remove("content--active");
+    item.classList.remove("content-item__active");
   });
 
   contentActive.forEach(function (item) {
-    item.classList.add("content--active");
+    item.classList.add("content-item__active");
   });
 }
